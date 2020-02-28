@@ -1,0 +1,27 @@
+{
+  "name": "mailer-service-api",
+  "version": "1.0.0",
+  "description": "Mailer connected to RabbitMQ",
+  "main": "../mailer-consumer/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fitlet/mailer-service.git"
+  },
+  "author": "Jakub Cała",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Fitlet/mailer-service/issues"
+  },
+  "homepage": "https://github.com/Fitlet/mailer-service#readme",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "express": "^4.17.1",
+    "typedi": "^0.8.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
