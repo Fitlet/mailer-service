@@ -1,13 +1,12 @@
-version: '3.5'
+version: "3.5"
 
 services:
   rabbitmq:
     image: rabbitmq:3.8.2-alpine
     ports:
-      - '5672:5672'
-      - '15672:15672'
-    networks:
-      - mailer
-
-networks:
-  mailer: {}
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - ./.docker/rabbitmq/etc/:/etc/rabbitmq/
+      - ./.docker/rabbitmq/data/:/var/lib/rabbitmq/
+      - ./.docker/rabbitmq/logs/:/var/log/rabbitmq/
